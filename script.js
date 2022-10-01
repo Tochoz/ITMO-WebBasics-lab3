@@ -32,8 +32,12 @@ function addRow() {
 }
 
 function deleteRow() {
-    if (rows)
+    var input = document.getElementById('input');
+    var id = input.value;
+    if (rows) {
         var table = document.getElementById('table');
         table.deleteRow(-1);
         rows--;
+    } else
+        alert("Таблица пуста")
 }
