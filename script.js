@@ -31,7 +31,7 @@ function addRow() {
 }
 
 function isNumber( str ){
-    const pattern = /^[0-9]$/;
+    const pattern = /[0-9]$/;
     return pattern.test(str)
 }
 
