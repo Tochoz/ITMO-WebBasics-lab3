@@ -45,7 +45,7 @@ function deleteRow() {
     if (isNumber(input.value))
         var id = +input.value;
     else {
-        alert("Необходимо указать число");
+        alert("Необходимо указать натуральное число");
         return;
     }
 
