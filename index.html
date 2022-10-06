@@ -7,15 +7,16 @@
     <script src="script.js" defer></script>
   </head>
 <body>
-  <div class="table container" id="table-container">
-    <div class="panel">
-      <button class="panel-button" id="create-button" onclick="createTable()">Создать таблицу</button>
-      <button class="panel-button" id="add-row-button" onclick="addRow()" disabled>Добавить строку</button>
-      <button class="panel-button" id="delete-row-button" onclick="deleteRow()" disabled>Удалить строку</button>
+  <div class="main">
+    <div class="table container" id="table-container">
+      <div class="panel">
+        <button class="panel-button" id="create-button" onclick="createTable()">Создать таблицу</button>
+        <button class="panel-button" id="add-row-button" onclick="addRow()" disabled>Добавить строку</button>
+        <button class="panel-button" id="delete-row-button" onclick="deleteRow()" disabled>Удалить строку</button>
+      </div>
+      <p>Введите значение которое необходимо добавить или номер строки для удаления</p>
+      <input class="input-field" id="input">
     </div>
-    <p>Введите значение которое необходимо добавить или номер строки для удаления</p>
-    <input class="input-field" id="input">
-
   </div>
 
 </body>
