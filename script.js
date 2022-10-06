@@ -28,8 +28,6 @@ function addRow() {
     input.value = "";
     rows++;
 
-
-
 }
 
 function isNumber( str ){
@@ -40,19 +38,16 @@ function isNumber( str ){
 
 function deleteRow() {
     var input = document.getElementById('input');
-
-
-    if (isNumber(input.value))
-        var id = +input.value;
-    else {
-        alert("Необходимо указать натуральное число");
-        return;
-    }
-
     if (rows) {
         var table = document.getElementById('table');
         var index = -1
-        if (id) {
+        if (input.value) {
+            if (isNumber(input.value))
+                var id = +input.value;
+            else {
+                alert("Необходимо указать натуральное число");
+                return;
+    }
             for (var i = 0, row; row = table.rows[i]; i++)
                 if (row.cells[0].innerText == id){
                     index = i;
