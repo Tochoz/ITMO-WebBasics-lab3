@@ -1,1 +1,5 @@
-# [Watch website here](https://tochoz.github.io/ITMO-web3)
+# Страница со скриптом на js
+С помощью JS создаёт таблицу, а также добавляет или удаляет строки в таблице
+
+
+[Ссылка на страницу](https://tochoz.github.io/ITMO-WebBasics-lab3/)
